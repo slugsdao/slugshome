@@ -1,0 +1,32 @@
+@mixin active() {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.wrapper:hover {
+  @include active();
+}
+
+.description {
+  color: white;
+  font-weight: 600;
+  font-size: 0.5rem;
+  line-height: 10px;
+  letter-spacing: 0.1em;
+  margin-top: 2px;
+}
+
+.logo {
+  font-family: Internal Rainbows;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+  line-height: 23px;
+  /* identical to box height */
+}
