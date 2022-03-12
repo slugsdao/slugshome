@@ -168,7 +168,6 @@ class MyDocument extends Document {
                 font-style: bold;
               }
             
-          
           `,
             }}
           />
