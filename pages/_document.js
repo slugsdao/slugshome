@@ -147,6 +147,27 @@ class MyDocument extends Document {
               src: url("./fonts/transamerica.ttf");
               font-weight: 400;
             }
+
+            @font-face {
+                font-family: "Olde English";
+                src: url("./fonts/OldeEnglish.ttf");
+                font-weight: 400;
+              }
+          
+              
+              @font-face {
+                font-family: "Times New Roman";
+                src: url("./fonts/timesnewroman.ttf");
+              }
+          
+              
+              @font-face {
+                font-family: "Times New Roman";
+                src: url("./fonts/timesnewromanbold.ttf");
+                font-weight: 400;
+                font-style: bold;
+              }
+            
           
           `,
             }}
