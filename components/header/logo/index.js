@@ -5,13 +5,12 @@ import cn from 'classnames';
 import styles from './styles.module.scss';
 
 const Logo = ({ className, black }) => (
-  <Link href="https://digitalax.xyz">
+  <Link href="https://slugsdao.xyz">
     <a className={cn(className, styles.wrapper)}>
       <p className={styles.logo} style={{ color: black ? 'black' : 'white' }}>
         {' '}
-        DIGITALAX{' '}
+        Slugs{' '}
       </p>
-      <p className={styles.description}>Web3 Fashion Economy</p>
     </a>
   </Link>
 );

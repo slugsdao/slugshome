@@ -42,68 +42,49 @@ const HeaderTopLine = ({ className, isShowStaking, buttonText, linkText }) => {
       </div>
       <div className={styles.rightBox}>
         <div className={cn(styles.links, isCollapse ? styles.expandedMenu : '')}>
-          <Link href="https://digifizzy.xyz/">
+          <Link href="https://docs.slugsdao.xyz/">
             <a className={styles.link} target="_blank">
-              Digifizzy
+              Documentation
             </a>
           </Link>
-          <Link href="https://blog.digitalax.xyz">
+          <Link href="">
             <a className={styles.link} target="_blank">
-              Blog Updates
+              Events
             </a>
           </Link>
-          <Link href="https://digitalax.xyz/marketplace">
+          <Link href="">
             <a className={styles.link} target="_blank">
-              Marketplace
+              Calendar
             </a>
           </Link>
           <Link href="https://www.digitalax.xyz/engineering">
-            <a className={styles.link} target="_blank">R&D</a>
-          </Link>
-          <Link href="https://staking.digitalax.xyz">
-            <a className={styles.link} target="_blank">Staking</a>
-          </Link>
-          <Link href="https://espa.digitalax.xyz">
-            <a className={styles.link} target="_blank">Esports Platform</a>
+            <a className={styles.link} target="_blank">
+            Web3 Syncopation Residency
+              </a>
           </Link>
         </div>
       </div>
       {hamburger ? (
         <div className={styles.mobileMenu}>
-          <a
-            href="https://medium.com/@digitalax"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Blog
-          </a>
-          <a
-            href="https://community.digitalax.xyz/"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Forum
-          </a>
-          {isShowStaking && (
-            <a
-              href="http://staking.digitalax.xyz/"
-              className={styles.link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {linkText}
+      <Link href="https://docs.slugsdao.xyz/">
+            <a className={styles.link} target="_blank">
+              Documentation
             </a>
-          )}
-          <Link href="/global">
-            <a className={styles.link}>Global Designer Network</a>
           </Link>
-          <Link href="/bridge">
-            <a className={styles.link}>Matic-Eth Bridge</a>
+          <Link href="">
+            <a className={styles.link} target="_blank">
+              Events
+            </a>
           </Link>
-          <Link href="/swap">
-            <a className={styles.link}>Token Swap</a>
+          <Link href="">
+            <a className={styles.link} target="_blank">
+              Calendar
+            </a>
+          </Link>
+          <Link href="https://docs.slugsdao.xyz/core-form/web3-syncopation-residency">
+            <a className={styles.link} target="_blank">
+              Web3 Syncopation Residency
+            </a>
           </Link>
         </div>
       ) : null}

@@ -1,11 +1,13 @@
 .footer {
-  background: black;
+  background: #45453D;
   position: relative;
 
   a {
-    color: white;
+    color: #DD0020;
+    margin-top: 20px;
     &:hover {
-      color: white;
+      color: #DD0020;
+      opacity: 0.8;
     }
   }
 
@@ -15,7 +17,7 @@
     left: 50px;
 
     a {
-      font-family: Inter;
+      font-family: 'Times New Roman', Times, serif;
       font-style: normal;
       font-weight: 900;
       font-size: 30px;
@@ -40,7 +42,7 @@
 
 .footerWrapper {
   color: white;
-  background: black;
+  background: #45453D;
   max-width: 1300px;
   margin: auto;
   padding-top: 57px;
@@ -51,19 +53,20 @@
   }
 
   .heading {
-    font-family: "Gilroy";
+    font-family: "Olde English";
     font-style: normal;
-    font-weight: 800;
-    font-size: 37px;
-    line-height: 45px;
+    font-weight: 400;
+    font-size: 250px;
+    line-height: 60px;
   }
 
   .description {
-    font-family: "Gilroy";
+    font-family: "Times New Roman";
     font-style: normal;
-    font-weight: 800;
-    font-size: 22px;
+    font-weight: 300;
+    font-size: 20px;
     line-height: 30px;
+    margin-top: 10px;
   }
 
   .centerWrapper {
@@ -77,53 +80,19 @@
     }
 
     .aboutLine {
-      font-family: "Gilroy";
+      font-family: "Times New Roman";
       font-style: normal;
       font-weight: 800;
       font-size: 20px;
       line-height: 24px;
+      color:#DD0020;
 
       a {
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
-
-    .iconsLine {
-      align-items: center;
-      img {
-        margin-right: 10px;
-      }
-      .mediumIcon {
-        margin-left: 10px;
-      }
-      .tiktokIcon {
-        margin-right: 20px;
-      }
-      .twitchIcon {
-        margin-right: 20px;
-      }
-    }
-
-    .faqLine {
-      font-family: Gilroy;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 20px;
-      line-height: 24px;
-      /* identical to box height */
-      text-decoration-line: underline;
-
-      :not(:last-child) {
-        margin-right: 30px;
-      }
-
-      @media (max-width: 600px) {
-        :not(:last-child) {
-          margin-right: 2vw;
-        }
-      }
-    }
+    
   }
 
   .whiteLogo {
