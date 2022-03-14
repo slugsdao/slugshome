@@ -2,11 +2,15 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
+  if (typeof window !== 'undefined') {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  } else {
+    return {}
+  }
 }
 
 function useWindowDimensions() {
@@ -39,7 +43,7 @@ const LandingFooter = () => {
       <div className={styles.body}>
         <div className={styles.logo}>Slugs' Saloon</div>
         <div className={styles.text}>
-        Slugs is a remanifestation of the original spirit of Slugs’ Saloon, one of the most formative Jazz cultural destinations throughout the 60s & 70s.
+        Slugs is a remanifestation of the original spirit of Slugs' Saloon, one of the most formative Jazz cultural destinations throughout the 60s & 70s.
         </div>
       </div>
       <div className={styles.links}>
