@@ -14,13 +14,13 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
+  //padding: 3rem 0;
+  //flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #DD0020;
+  background-color: #dd0020;
 }
 
 .footer {
@@ -39,59 +39,80 @@
   flex-grow: 1;
 }
 
-.topBanner {
-  margin-bottom: 10rem;
+.text {
+  font-family: Olde English;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 150px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 10px;
 
-  
-  .text {
-    font-family: Olde English;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 150px;
-    line-height: 36px;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    margin-top: 100px;
+  white-space: nowrap;
 
-    white-space: nowrap;
+  color: #ffffff;
 
-    color: #FFFFFF;
-
-    h2 {
-      font-family: Times New Roman;
-      font-size: 20px;
-      margin-top: 70px;
-    }
-  }
-
-  .subText {
+  h2 {
     font-family: Times New Roman;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    margin-top: 80px;
-    /* or 148% */
-
-    text-align: center;
-
-    color: #FFFFFF;
-
-    a {
-      text-decoration: underline;
-    }
+    font-size: 20px;
+    margin-top: 70px;
   }
 }
 
+.subText {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 0px;
+  /* or 148% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.mainImg {
+  margin-top: 100px;
+}
 
 @media (max-width: 850px) {
   .text {
-    font-size: 30px;
-   line-height: 36px;
-   font-weight: 200;
-   }
+    font-size: 15vw;
+    line-height: 36px;
+    font-weight: 200;
+    color: white;
+  }
 
-   .subtext {
-    font-size: 13px;
-   }
- }
+  .subText {
+    font-size: 16px;
+  }
+
+  .mainImg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .text {
+    font-size: 15vw;
+
+    h2 {
+      margin-top: 30px;
+    }
+  }
+
+  .mainImg {
+    width: 100%;
+  }
+}

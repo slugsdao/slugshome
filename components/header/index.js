@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Logo from './logo';
 import styles from './styles.module.scss';
 
-const Header = () => {
+const HeaderTopLine = () => {
   const [show, setShow] = useState(false);
   return (
     <>
@@ -57,7 +57,7 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderTopLine;
 
 
 
